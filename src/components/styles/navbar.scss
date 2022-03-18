@@ -1,0 +1,119 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+ */@import "../styles/variables";
+
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+} */
+
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;    position: relative;
+  
+  .modal--container{
+    width: 90% !important;
+  }
+  .logo {
+    .logo--link {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      color: $theme-color;
+    }
+    a:hover {
+      border-bottom: none;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    width: 45%;
+    margin: auto;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 4.7% 0;
+
+      li {
+        list-style: none;
+        a {
+          font-size: 90%;
+          font-weight: 800;
+          text-decoration: none;
+          color: $secondary-color;
+          font-family: $main-font;
+          transition: 0.4s ease-in-out;
+          &:focus {
+            padding-bottom: 4px;
+            color: $theme-color;
+          }
+        }
+        a:hover {
+          /*           border-bottom: 2px solid $primary;
+ */
+          padding-bottom: 4px;
+          color: $theme-color;
+        }
+      }
+    }
+    .notification--container {
+      position: absolute;
+      right: 2%;
+      top: 28%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      /* max-width: 20%; */
+      
+    
+/*       z-index: 3;
+ */      .trigger--bar {
+        background-color: $danger-color;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        color: $light-color;
+        padding: 0.3rem 2rem;
+        font-size: $footer-fontsize;
+        width: 100%;
+
+      }
+      .notification {
+        width: 30px;
+        right: 5%;
+        margin-left: 5px;
+/*         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+ */        img {
+          width: 100%;
+        }
+      }
+      .application--container {
+        top: 105%;
+        left:  0%;
+        position: absolute;
+        background: $footer-color;
+        color: $light-color;
+        font-size: $footer-fontsize;
+        padding: 9px 8px;
+        z-index: 2;
+        width: 87%;
+
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    width: 3%;
+    top: 22%;
+    left: 5%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.nav-bar:hover {
+  cursor: pointer;
+}

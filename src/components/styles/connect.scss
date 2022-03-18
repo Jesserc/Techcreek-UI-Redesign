@@ -1,0 +1,158 @@
+@import "../styles/variables";
+
+.container {
+  scroll-snap-type: y mandatory;
+  .connect-header {
+    //  background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    .heading {
+      background: url("../images/connect-bg.png");
+      padding: 8% 0 0 4%;
+      width: 50%;
+      height: 60vh;
+      margin: 0;
+      margin-bottom: 2%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    color: #eb8525;
+    h1{
+      font-weight: 800;
+    }
+    }
+    .connect-text {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .color-div{
+      height: 10%;
+      width: 7%;
+      background: #e08142;
+      position: absolute;
+      opacity: 0.5;
+    }
+    .color-div-two{
+      position: absolute;
+      background: $theme-color;
+      height: 15%;
+      width: 14%;
+      left: 0%;
+      bottom: 0%;
+      // clip-path: circle(50% at 50% 50%);
+      background-color: #e5e5f7;
+      background-size: 10px 10px;
+      background-image: repeating-linear-gradient(
+        45deg,
+        #444cf7 0,
+        #444cf7 1px,
+        #e5e5f7 0,
+        #e5e5f7 50%
+      );
+      opacity: 90%;
+
+    }
+   
+    .color-div{
+      height: 10%;
+      width: 7%;
+      background: #e08142;
+      position: absolute;
+      opacity: 0.5;
+    }
+    .color-div-three{
+      position: absolute;
+      height: 5rem;
+      width: 5rem;
+      left: 0%;
+      bottom: 9%;
+      clip-path: circle(50% at 50% 50%);
+      background-color: #e5e5f7;
+      background-size: 10px 10px;
+      background-image: repeating-linear-gradient(
+        45deg,
+        #444cf7 0,
+        #444cf7 1px,
+        #e5e5f7 0,
+        #e5e5f7 50%
+      );
+      opacity: 90%;
+    }
+    .color-div-four{
+      position: absolute;
+      background: $theme-color;
+      height: 15%;
+      width: 14%;
+      right: 6.5%;
+      top: 10%;
+      z-index: -2;
+      // clip-path: circle(50% at 50% 50%);
+      background-color: #e5e5f7;
+      background-size: 10px 10px;
+      background-image: repeating-linear-gradient(
+        45deg,
+        #444cf7 0,
+        #444cf7 1px,
+        #e5e5f7 0,
+        #e5e5f7 50%
+      );
+      opacity: 50%;
+
+    }
+  }
+  .connect-icon{
+    margin-top: 10%;
+    padding: 1% ;
+    width: max-content;
+    // border: 2px solid $theme-color;
+    color: $light-color;
+    background: $footer-color ;
+  }
+  .applicants--container {
+    margin-top: 3%;
+    padding-top: 1%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(150px, auto);
+    scroll-snap-align: start;
+    .details {
+      box-shadow: rgba(0, 0, 0, 0.1) -1px -1px 10px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      border-radius: 5px;
+      padding: 5% 2.1%;
+      width: 100%;
+
+   margin: auto;
+      .person--container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+        .image {
+          width: 2rem;
+          img {
+            width: 100%;
+            border-radius: 1000px;
+            
+          }
+        }
+        .header {
+          color: $footer-color;
+          margin-bottom: 2%;
+        }
+        .state {
+          color: $dim-color;
+        }
+      }
+    }
+  }
+}

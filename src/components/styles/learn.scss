@@ -1,0 +1,191 @@
+@import "./variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* html{
+  background: #a6d5fa;
+} */
+
+.learn--layout {
+  position: relative;
+  height: 60vh;
+  .box-one {
+    position: absolute;
+    bottom: 7%;
+    left: 0.5%;
+    // border: 4px solid rgb(196, 194, 191);
+    height: 4rem;
+    width: 5rem;
+    opacity: 20%;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #444cf7 0,
+      #444cf7 1px,
+      #e5e5f7 0,
+      #e5e5f7 50%
+    );
+    opacity: 50%;
+  }
+  .box-two {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    left: 1.5%;
+    bottom: 0;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #e5e5f7;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #444cf7 0,
+      #444cf7 1px,
+      #e5e5f7 0,
+      #e5e5f7 50%
+    );
+    opacity: 90%;
+  }
+
+  .header--wrapper {
+    display: flex;
+    justify-content: space-around;
+    .learn--headers {
+      padding-top: 1%;
+      width: 40%;
+      height: 60vh;
+      margin: 0;
+      margin-bottom: 2%;
+      background: url("../images/learn-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      h1 {
+        padding: 12% 0 0 19%;
+        font-size: 3.06rem;
+        font-weight: 800;
+        font-family: "poppins" sans-serif;
+        color: #e08142;
+      }
+      
+    }
+
+    .learn--texts {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .color-div{
+        position: absolute;
+        background: $theme-color;
+        height: 10%;
+        width: 3%;
+        right: 9.5%;
+        top: 10%;
+        z-index: -2;
+        // clip-path: circle(50% at 50% 50%);
+        background-color: #e5e5f7;
+        background-size: 10px 10px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          #444cf7 0,
+          #444cf7 1px,
+          #e5e5f7 0,
+          #e5e5f7 50%
+        );
+        opacity: 50%;
+
+      }
+    
+    }
+  }
+  .container {
+    background-color: $theme-color;
+    color: $light-color;
+    border-radius: 5px 0 5px;
+    padding: 5%;
+    padding-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.1) -3px 6px 3px;
+    overflow-y: scroll;
+    // scroll-behavior: smooth;
+    transition: 0.5s ease-in-out;
+   height: 50vh;
+    width: 100vw;
+    margin-top: 0;
+    scroll-snap-type: y mandatory;
+    .video--section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      // scroll-snap-align: start;
+
+      .video--container {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 39px;
+        width: 100%;
+        scroll-snap-align: start;
+
+        &:hover {
+          .image--section {
+            width: 240px;
+          }
+        }
+
+        .image--section {
+          transition: 0.6s ease-in-out;
+          width: 200px;
+          img {
+            width: 100%;
+          }
+        }
+        .text--section {
+          width: 70%;
+          text-align: left;
+          h4 {
+            padding-bottom: 25px;
+            span {
+              border-bottom: 2px solid red;
+            }
+          }
+
+          button {
+            border: none;
+            background: $danger-color /* #050505 */;
+            color: $light-color;
+            padding: 1% 2%;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  //scrollbar styling
+  ::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgb(250, 251, 253);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 8px rgba(247, 247, 248, 0.897);
+    border-radius: 9px;
+
+    &:hover {
+      border-radius: 9px;
+      -webkit-box-shadow: inset 0 0 8px rgba(246, 247, 248, 0.842);
+    }
+  }
+}

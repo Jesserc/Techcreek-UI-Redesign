@@ -1,0 +1,265 @@
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
+.membership--container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  position: relative;
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 70vh;
+    padding-top: 1%;
+    .image--container {
+      width: 50%;
+      overflow: hidden;
+      position: relative;
+      .image {
+        width: 50%;
+        margin: 15% auto;
+
+        .color-div-three{
+          position: absolute;
+          background: $theme-color;
+          height: 70%;
+          width: 55%;
+          left: 22.5%;
+         top: 15%;
+         bottom: 0%;
+          background-color: #e5e5f7;
+          background-size: 10px 10px;
+          background-image: repeating-linear-gradient(
+            45deg,
+            #444cf7 0,
+            #444cf7 1px,
+            #e5e5f7 0,
+            #e5e5f7 50%
+          );
+          opacity: 30%;
+      
+        }
+
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .form--container {
+      overflow: hidden;
+      position: relative;
+      h3 {
+        color: rgba(223, 86, 86, 0.76);
+        // background: $danger-color;
+        font-weight: 700;
+        padding-left: 4%;
+        padding-bottom: 4%;
+        width: max-content;
+        text-align: center;
+        padding-left: 0px;
+        padding: 1%;
+        margin-left: 1.1rem;
+        margin-bottom: 3%;
+        
+      }
+      .trigers {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        padding-left: 2%;
+        button {
+          border: none;
+          background: none;
+          color: $theme-color;
+          outline: none;
+          width: 100%;
+        font-size: 0.9rem;
+          font-weight: 500; 
+          &:focus {
+            font-weight: 700;
+          }
+        }
+      }
+      width: 50%;
+      .sign--in {
+        width: 100%;
+        form {
+          
+          .inputs {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+
+            align-items: center;
+            input {
+              margin: 1%;
+              padding-bottom: 1rem;
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 2px solid $theme-color;
+              // border-radius: 2px;
+              outline: none;
+              margin-bottom: 3%;
+              padding-top: 0.5rem;
+               &::placeholder{
+             font-size: 0.8rem;
+              } 
+            }
+          }
+          .checkbox--container {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            font-size: $footer-fontsize;
+            margin-left: 5%;
+            margin-top: 5%;
+            .check--box {
+              color: $dim-color;
+            }
+            .forgot--text {
+              a {
+                color: $danger-color;
+                text-decoration: none;
+              }
+            }
+          }
+          .btn {
+            margin-left: 5%;
+            margin-top: 3%;
+            button {
+              background:  $theme-color-light ;
+              color: white;
+              padding: 0.3rem 1.5rem;
+              border: none;
+            }
+          }
+        }
+      }
+
+      .register {
+        width: 100%;
+
+        form {
+          .inputs {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+            align-items: center;
+            input {
+              margin: 1%;
+              padding-bottom: 1rem;
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 2px solid $theme-color;
+              outline: none;
+              margin-bottom: 3%;
+              padding-top: 0.5rem;
+              &::placeholder{
+                font-size: 0.8rem;
+                 }
+            }
+            select {
+              margin: 1%;
+              padding-bottom: 0.4rem;
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 2px solid $theme-color;
+              outline: none;
+              font-size: 0.8rem;
+            }
+          }
+          .checkbox--container {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            margin-left: 5%;
+            margin-top: 5%;
+            .check--box {
+              color: rgb(81, 81, 81);
+            }
+            .forgot--text {
+              a {
+                color: rgb(185, 76, 69);
+                text-decoration: none;
+              }
+            }
+          }
+          .btn {
+            margin-left: 5%;
+            margin-top: 3%;
+            button {
+              background: $theme-color-light;
+              color: white;
+              padding: 0.3rem 1.5rem;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  .color-div{
+
+    position: absolute;
+    background: $theme-color;
+    height: 12%;
+    width: 6%;
+    right: 2%;
+   bottom: 10%;
+
+
+    // clip-path: circle(50% at 50% 50%);
+    background-color: #e5e5f7;
+    // opacity: 0.8;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #444cf7 0,
+      #444cf7 1px,
+      #e5e5f7 0,
+      #e5e5f7 50%
+    );
+    opacity: 20%;
+
+  }
+  .color-div-two{
+
+    position: absolute;
+    background: $theme-color;
+    height: 15%;
+    width: 5%;
+    right: 2%;
+   bottom: 2%;
+    border-radius: 50%;
+    // clip-path: circle(50% at 50% 50%);
+    background-color: #e5e5f7;
+    // opacity: 0.8;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #444cf7 0,
+      #444cf7 1px,
+      #e5e5f7 0,
+      #e5e5f7 50%
+    );
+    opacity: 40%;
+
+  }
+ 
+}
